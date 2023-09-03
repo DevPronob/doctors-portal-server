@@ -13,7 +13,7 @@ app.use("/create-payment-intent",require('./routes/stripeRoutes') );
 
 app.use("/payments",require('./routes/payment') );
 
-app.listen(5000,() =>{
+app.listen(process.env.PORT,() =>{
     console.log("Server is running")
 })
 connectDB()
